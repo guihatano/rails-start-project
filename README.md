@@ -1,5 +1,7 @@
 # README
 
+This project is created to serve as a start project with some useful gems already added and postgresql as database
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
@@ -20,5 +22,3 @@ Things you may want to cover:
 * Services (job queues, cache servers, search engines, etc.)
 
 * Deployment instructions
-
-* ...
