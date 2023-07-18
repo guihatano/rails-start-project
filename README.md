@@ -1,4 +1,4 @@
-# README
+# ruby-start-project
 
 This project is created to serve as a start project with some useful gems already added and postgresql as database
 
