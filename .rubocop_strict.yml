@@ -1,0 +1,30 @@
+#################
+# DISABLED COPS #
+#################
+
+Lint/ConstantResolution:
+  Description: 'Check that certain constants are fully qualified.'
+  Enabled: false
+
+RSpec/ExampleLength:
+  Description: 'A long example is usually more difficult to understand.'
+  Enabled: false
+
+RSpec/MultipleExpectations:
+  Description: 'Checks if examples contain too many `expect` calls.'
+  Enabled: false
+
+Style/Copyright:
+  Description: 'Include a copyright notice in each file before any code.'
+  Enabled: false
+
+Style/Documentation:
+  Description: 'Document classes and non-namespace modules.'
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Description: "Add the frozen_string_literal comment to the top of files to help transition to frozen string literals by default."
+  Exclude:
+    - 'Rakefile'
+    - 'Gemfile'
+    - 'config.ru'

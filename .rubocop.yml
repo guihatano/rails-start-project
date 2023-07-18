@@ -1,0 +1,61 @@
+inherit_from:
+  - .rubocop_todo.yml
+  - .rubocop_strict.yml
+
+require:
+  - rubocop-rspec
+  - rubocop-rails
+  - rubocop-rake
+  - rubocop-performance
+  - rubocop-capybara
+  - rubocop-factory_bot
+
+AllCops:
+  DisplayCopNames: true
+  EnabledByDefault: true
+  TargetRubyVersion: 3.2.2
+  Exclude:
+    - 'app/views/**/*'
+    - 'bin/*'
+    - 'db/**/*'
+    - 'config/**/*'
+    - 'script/**/*'
+    - '.irbrc'
+
+Rails:
+  Enabled: true
+
+Metrics/MethodLength:
+  Max: 50
+
+RSpec:
+  Language:
+    ExampleGroups:
+      Regular:
+        - describe
+        - context
+        - feature
+        - example_group
+        - path
+        - post
+        - put
+        - get
+        - delete
+    Examples:
+      Regular:
+        - it
+        - specify
+        - example
+        - scenario
+        - its
+        - response
+
+Rails/UnknownEnv:
+  Environments:
+    - production
+    - development
+    - test
+    - staging
+
+Layout/SingleLineBlockChain:
+  Description: "Checks if method calls are chained onto single line blocks. It considers that a line break before the dot improves the readability of the code."
