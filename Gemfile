@@ -107,6 +107,9 @@ group :test do
   # Clean database after tests
   gem 'database_cleaner', '~> 2.0'
 
+  # Brings back assigns and assert_template
+  gem 'rails-controller-testing', '~> 1.0.5'
+
   # Ruby bindings for Selenium
   gem 'selenium-webdriver', '~> 4.9'
 
