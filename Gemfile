@@ -61,6 +61,9 @@ group :development, :test do
   # Entity creation
   gem 'factory_bot_rails', '~> 6.2'
 
+  # Fake data generation
+  gem 'faker', '~> 3.2.0'
+
   # Debugging
   gem 'pry-byebug', '~> 3.10.1'
 
